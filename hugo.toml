@@ -1,0 +1,58 @@
+baseURL = "https://Avev.github.io/"
+title = "Avev | Cyber Blog"
+theme = "mana"
+defaultContentLanguage = "en"
+
+[pagination]
+  pageSize = 10
+
+[params]
+  description = "Security research, CTF write-ups, malware analysis, and offensive tooling."
+  favicon = "/favicon.ico"
+
+  heroTitleLine1 = "Avev"
+  heroTitleLine2 = "Cyber Blog"
+
+  [params.avatar.home]
+    url = "https://github.com/Avev.png"
+  [params.avatar.about]
+    url = "https://github.com/Avev.png"
+
+  [params.social]
+    github = "https://github.com/Avev"
+    email = "mailto:avivrahamim95@gmail.com"
+
+  [params.codeHighlight]
+    darkTheme = "catppuccin-macchiato"
+    lightTheme = "catppuccin-latte"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 2
+  [[menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 3
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 4
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+  [markup.highlight]
+    noClasses = false
